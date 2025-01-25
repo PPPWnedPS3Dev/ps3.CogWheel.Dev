@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CogWheel Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1c1c1c;
+            color: #eaeaea;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background: #000;
+            color: #eaeaea;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        header nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        header nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        header nav ul li a {
+            color: #eaeaea;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .filter-bar {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+            background-color: #333;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .filter-group {
+            display: flex;
+            align-items: center;
+        }
+        .filter-group label {
+            margin-right: 10px;
+            color: #b0b0b0;
+        }
+        .filter-group select, .filter-group input {
+            background-color: #444;
+            border: 1px solid #555;
+            color: #eaeaea;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        main {
+            padding: 20px;
+            flex-grow: 1;
+        }
+        h2 {
+            text-align: center;
+            color: #eaeaea;
+        }
+        .homebrew-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .homebrew-card {
+            background-color: #333;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+        }
+        .homebrew-card:hover {
+            transform: translateY(-10px);
+        }
+        .homebrew-card img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .homebrew-info h3 {
+            color: #4CAF50;
+            margin-top: 10px;
+        }
+        .homebrew-info p {
+            color: #b0b0b0;
+            font-size: 14px;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #000;
+            color: #eaeaea;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CogWheel - PS3 Games</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    </div>
+
+    <main>
+        <h2>Explore Games!</h2>
+        <p>Here you can find some of our Favorite Games for PS3! ALL OF THESE GAMES ARE CURRENTLY EUROPEAN VERSIONS, SOON WE WILL INCLUDE OTHER REGIONS TOO!</p>
+        <div class="homebrew-list">
+            <!-- MultiMAN MOD -->
+            <a href="https://cdn.psgamedl.com/PS3-DEC/Last%20of%20Us%20The%20(Europe)%20(EnPlRu).zip?token=cnVHdlNjRlBHFG92XXEdYV9SRhV4fVx1Uw%3D%3D" download="TLOU.zip" class="homebrew-card" style="text-decoration: none; color: inherit;">
+                <div class="homebrew-info">
+                    <h3>The Last Of Us</h3>
+                    <p>The Last of Us for PS3 is a critically acclaimed action-adventure game developed by Naughty Dog. Set in a post-apocalyptic world ravaged by a fungal infection, it follows the story of Joel and Ellie, two survivors on a perilous journey across the United States. The game combines gripping storytelling, intense combat, and stealth gameplay with emotional character development.</p>
+                </div>
+            </a>
+
+            <!-- WebMAN MOD -->
+            <a href="https://downloads.romspedia.com/roms/God%20of%20War%20III%20%28USA%29%20%28v02.00%29.7z" download="GoWIII.zip" class="homebrew-card" style="text-decoration: none; color: inherit;">
+                <div class="homebrew-info">
+                    <h3>God of War III</h3>
+                    <p>WebMAN MOD is a modified version of webMAN with many additional features, allowing you to manage games and files directly from your PS3.</p>
+                </div>
+            </a>
+
+            <!-- IrisMAN -->
+            <a href="https://store.brewology.com/get/homebrew.php?id=250&fid=2409" download="IrisMAN.zip" class="homebrew-card" style="text-decoration: none; color: inherit;">
+                <div class="homebrew-info">
+                    <h3>IrisMAN</h3>
+                    <p>IrisMAN is a PS3 game manager based on Iris Manager with improved GUI, increased stability, and added features.</p>
+                </div>
+            </a>
+
+            <!-- Movian (Showtime) -->
+            <a href="https://store.brewology.com/get/homebrew.php?id=196&fid=2421" download="Movian.zip" class="homebrew-card" style="text-decoration: none; color: inherit;">
+                <div class="homebrew-info">
+                    <h3>Movian (Showtime)</h3>
+                    <p>Movian is a media player that allows you to play videos, music, and view photos on your PS3, with support for streaming and plugins.</p>
+                </div>
+            </a>
+
+            <!-- SEN Enabler -->
+            <a href="https://store.brewology.com/get/homebrew.php?id=283&fid=2259" download="SEN_Enabler.zip" class="homebrew-card" style="text-decoration: none; color: inherit;">
+                <div class="homebrew-info">
+                    <h3>SEN Enabler (FOR CFW ONLY!)</h3>
+                    <p>SEN Enabler allows you to safely access PlayStation Network (PSN) on a custom firmware (CFW) by spoofing your firmware version.</p>
+                </div>
+            </a>
+
+            <!-- RetroArch -->
+            <a href="https://xbins.org/libretro/stable/1.9.0/playstation/ps3/RetroArch.PS3.CEX.PS3.pkg" download="RetroArch_CEX.zip" class="homebrew-card" style="text-decoration: none; color: inherit;">
+                <div class="homebrew-info">
+                    <h3>RetroArch</h3>
+                    <p>RetroArch is an all-in-one retro gaming emulator that allows you to play games from various consoles on your PS3.</p>
+                </div>
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 CogWheel Store - All rights reserved.</p>
+    </footer>
+</body>
+</html>

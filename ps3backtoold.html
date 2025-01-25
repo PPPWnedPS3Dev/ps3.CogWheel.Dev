@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS3 Firmware Reversion</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Arial", sans-serif;
+            background-color: #141414;
+            color: #f1f1f1;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #202020;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #444;
+        }
+
+        header h1 {
+            font-size: 1.8em;
+            margin: 10px 0;
+        }
+
+        .content {
+            text-align: center;
+            padding: 30px;
+        }
+
+        .content h2 {
+            color: #f39c12;
+        }
+
+        .warning {
+            color: #e74c3c;
+            margin: 20px 0;
+        }
+
+        .buttons {
+            margin: 20px 0;
+        }
+
+        .buttons a, .buttons button {
+            display: inline-block;
+            background-color: #444;
+            color: #f1f1f1;
+            padding: 10px 20px;
+            margin: 5px;
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .buttons a:hover, .buttons button:hover {
+            background-color: #f39c12;
+        }
+
+        footer {
+            background-color: #202020;
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+            border-top: 2px solid #444;
+        }
+
+        footer p {
+            font-size: 0.9em;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PS3 Firmware Reversion</h1>
+    </header>
+
+    <div class="content">
+        <h2>Revert to Previous Firmware</h2>
+        <p>Follow the steps below to revert your PS3 to a previous firmware version:</p>
+
+        <div class="warning">
+            <strong>WARNING:</strong> This process requires a jailbroken PS3 and proper tools. Proceed with caution.
+        </div>
+
+        <div class="steps">
+            <ol>
+                <strong>Place the previous firmware in the root directory of a USB drive.</strong>
+                <strong>Insert the USB drive into your PS3 and click I Understand - Proceed</strong>
+                <strong>Follow the on-screen instructions to revert the firmware.</strong>
+            </ol>
+        </div>
+
+        <div class="buttons">
+            <button onclick="startReversion()">I Understand - Proceed</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; CellBreakers 2024. All Rights Deserved</p>
+    </footer>
+
+    <script>
+        function startReversion() {
+            alert("Ensure you have followed all steps and have a backup of your data. Install .PKG File and proceed to the next step. Turn off your PS3 Now & turn it back on. You should be in the PS3BTOMenu.");
+        }
+    </script>
+</body>
+</html>
+

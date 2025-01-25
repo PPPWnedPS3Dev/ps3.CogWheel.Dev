@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PS3Patch Master</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin: 20px auto;
+            padding: 20px;
+            width: 90%;
+            max-width: 400px;
+            border: 1px solid #555;
+            border-radius: 10px;
+            background-color: #333;
+        }
+        button {
+            font-size: 18px;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #00509e;
+        }
+        input[type="text"] {
+            font-size: 16px;
+            padding: 5px;
+            width: calc(100% - 20px);
+            margin: 10px 0;
+            border: 1px solid #555;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>PS3Patch Master</h1>
+        <p>Enter the Game ID to download the license:</p>
+        <input type="text" id="game_id" placeholder="Enter Game ID (e.g., BLUS12345)">
+        <br>
+        <button onclick="downloadLicense()">Download License</button>
+        <p>Ensure your PS3 is configured to access this page.</p>
+        <p>If you want to use alternative, click below</p>
+        <a href="https://store.brewology.com/get/homebrew.php?id=126&fid=1688">Download ReActPSN For PS3</a>
+    </div>
+
+    <script>
+        function downloadLicense() {
+            var game_id = document.getElementById("game_id").value.trim();
+
+            // Define a mapping of Game IDs to Dropbox links
+            var licenses = {
+                "BLUS12345": "https://www.dropbox.com/s/abcd1234/BLUS12345.rap?dl=1",
+                "BLUS67890": "https://www.dropbox.com/s/efgh5678/BLUS67890.rap?dl=1",
+                "BCUS98765": "https://www.dropbox.com/s/ijkl9012/BCUS98765.rap?dl=1"
+            };
+
+            // Check if the entered Game ID exists in the mapping
+            if (licenses[game_id]) {
+                // Redirect to the Dropbox link for download
+                window.location.href = licenses[game_id];
+            } else {
+                alert("License not found for the specified Game ID.");
+            }
+        }
+    </script>
+</body>
+</html>
+

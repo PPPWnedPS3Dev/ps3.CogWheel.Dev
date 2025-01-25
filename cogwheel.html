@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CogWheel - PS3</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1e1e1e;
+            color: #ffffff;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        .store-header {
+            width: 100%;
+            padding: 20px 40px;
+            background-color: #222;
+            color: #fff;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 32px;
+            height: 32px;
+            margin-right: 10px;
+        }
+
+        .nav-links a {
+            margin-left: 20px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #f39c12;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 250px;
+            height: 100%;
+            background-color: #333;
+            padding-top: 80px;
+            z-index: 999;
+            overflow-y: auto;
+        }
+
+        .profile-container {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            padding: 10px;
+            border-bottom: 1px solid #444;
+            margin-bottom: 20px;
+        }
+
+        .profile-container img {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            margin-right: 10px;
+            border: 2px solid #fff;
+        }
+
+        .profile-container span {
+            color: #fff;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .menu-links a {
+            display: block;
+            padding: 15px 20px;
+            color: #bbb;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .menu-links a:hover {
+            background-color: #444;
+            color: #fff;
+        }
+
+        .logout-btn {
+            display: block;
+            padding: 15px 20px;
+            color: #f39c12;
+            font-weight: bold;
+            text-decoration: none;
+            text-align: center;
+            margin-top: 20px;
+            border-top: 1px solid #444;
+            display: none; /* Hidden initially */
+        }
+
+        .logout-btn:hover {
+            background-color: #444;
+            color: #fff;
+        }
+
+        /* Content */
+        .content {
+            margin-left: 250px;
+            margin-top: 120px;
+            padding: 30px 40px;
+            text-align: center;
+        }
+
+        /* Footer */
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            background-color: #222;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="store-header">
+        <div class="header-content">
+            <div class="logo">
+                <img id="header-icon" src="Windows_CogWheel_LOGO_v0.5.0.png" alt="CogWheel Icon">
+                CogWheel
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                </div>
+        </div>
+    </header>
+
+    <!-- Sidebar Menu -->
+    <div class="sidebar">
+        <div class="menu-links">
+            <a href="Store2.html">Games</a>
+            <a href="Firmwares.html">Firmwares</a>
+            <a href="FreeStores.html">Free Stores</a>
+            <a href="emulators.html">Emulators</a>
+            <a href="Themes.html">Themes</a>
+            <a href="PS3JailbreakTool">PS3 Jailbreaking</a>
+            <a href="License.html">License</a>
+            <a href="support.html">Support</a>
+            <a href="PrivacyPolicy.html">Privacy Policy</a>
+            <a href="TermsOfUse.html">Terms of Use</a>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        <h1>Welcome to CogWheel for PS3 Systems!</h1>
+        <p>Here you can download Themes, Games, Homebrew Apps, Homebrew Games, Jailbreaks,...</p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 CellBreakers. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

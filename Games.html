@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CogWheel - Games</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #ffffff;
+            text-align: center;
+        }
+        header {
+            background-color: #282828;
+            padding: 20px;
+            border-bottom: 2px solid #4CAF50;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+            color: #4CAF50;
+        }
+        .game-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 30px auto;
+            padding: 0 10px;
+        }
+        .game-card {
+            background-color: #1e1e1e;
+            margin: 15px;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            width: 220px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .game-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+        }
+        .game-card img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .game-card h3 {
+            margin: 10px 0 5px;
+            font-size: 18px;
+            color: #4CAF50;
+        }
+        .game-card a {
+            display: block;
+            background-color: #4CAF50;
+            color: #ffffff;
+            text-decoration: none;
+            margin: 8px auto;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .game-card a:hover {
+            background-color: #45a049;
+        }
+        footer {
+            background-color: #282828;
+            color: #ffffff;
+            padding: 15px;
+            margin-top: 30px;
+            border-top: 2px solid #4CAF50;
+        }
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CogWheel - PS3 Games Library</h1>
+    </header>
+
+    <div class="game-grid">
+        <!-- Game 1 -->
+        <div class="game-card">
+            <img src="https://via.placeholder.com/200" alt="Monster Hunter">
+            <h3>Monster Hunter</h3>
+            <a href="#">Install Game (32GB)</a>
+            <a href="#">Install Update (4GB)</a>
+        </div>
+
+        <!-- Game 2 -->
+        <div class="game-card">
+            <img src="https://via.placeholder.com/200" alt="Storm 4">
+            <h3>Storm 4</h3>
+            <a href="#">Install Game (16GB)</a>
+            <a href="#">Install Update (4GB)</a>
+        </div>
+
+        <!-- Game 3 -->
+        <div class="game-card">
+            <img src="https://via.placeholder.com/200" alt="Jedi Fallen Order">
+            <h3>Jedi Fallen Order</h3>
+            <a href="#">Install Game (44GB)</a>
+            <a href="#">Install Update (4GB)</a>
+        </div>
+
+        <!-- Game 4 -->
+        <div class="game-card">
+            <img src="https://via.placeholder.com/200" alt="Crash Bandicoot">
+            <h3>Crash Bandicoot</h3>
+            <a href="#">Install Game (17GB)</a>
+            <a href="#">Install Update (4GB)</a>
+        </div>
+
+        <!-- Game 5 -->
+        <div class="game-card">
+            <img src="https://via.placeholder.com/200" alt="The Last of Us">
+            <h3>The Last of Us</h3>
+            <a href="#">Install Game (30GB)</a>
+            <a href="#">Install Update (5GB)</a>
+        </div>
+
+        <!-- Game 6 -->
+        <div class="game-card">
+            <img src="https://via.placeholder.com/200" alt="God of War">
+            <h3>God of War</h3>
+            <a href="#">Install Game (50GB)</a>
+            <a href="#">Install Update (6GB)</a>
+        </div>
+
+        <!-- Game 7 -->
+        <div class="game-card">
+            <img src="https://via.placeholder.com/200" alt="Red Dead Redemption">
+            <h3>Red Dead Redemption</h3>
+            <a href="#">Install Game (60GB)</a>
+            <a href="#">Install Update (6GB)</a>
+        </div>
+
+        <!-- Game 8 -->
+        <div class="game-card">
+            <img src="https://via.placeholder.com/200" alt="Assassin's Creed">
+            <h3>Assassin's Creed</h3>
+            <a href="#">Install Game (25GB)</a>
+            <a href="#">Install Update (3GB)</a>
+        </div>
+
+        <!-- Game 9 -->
+        <div class="game-card">
+            <img src="https://via.placeholder.com/200" alt="Uncharted 4">
+            <h3>Uncharted 4</h3>
+            <a href="#">Install Game (45GB)</a>
+            <a href="#">Install Update (5GB)</a>
+        </div>
+
+        <!-- Game 10 -->
+        <div class="game-card">
+            <img src="https://via.placeholder.com/200" alt="Gran Turismo 7">
+            <h3>Gran Turismo 7</h3>
+            <a href="#">Install Game (40GB)</a>
+            <a href="#">Install Update (5GB)</a>
+        </div>
+
+        <!-- Game 11 -->
+        <div class="game-card">
+            <img src="https://via.placeholder.com/200" alt="Mortal Kombat 11">
+            <h3>Mortal Kombat 11</h3>
+            <a href="#">Install Game (50GB)</a>
+            <a href="#">Install Update (4GB)</a>
+        </div>
+
+        <!-- Game 12 -->
+        <div class="game-card">
+            <img src="https://via.placeholder.com/200" alt="Spiderman PS4">
+            <h3>Spiderman PS4</h3>
+            <a href="#">Install Game (45GB)</a>
+            <a href="#">Install Update (4GB)</a>
+        </div>
+
+        <!-- Game 13 -->
+        <div class="game-card">
+            <img src="https://via.placeholder.com/200" alt="Battlefield V">
+            <h3>Battlefield V</h3>
+            <a href="#">Install Game (70GB)</a>
+            <a href="#">Install Update (5GB)</a>
+        </div>
+
+        <!-- Game 14 -->
+        <div class="game-card">
+            <img src="https://via.placeholder.com/200" alt="The Witcher 3">
+            <h3>The Witcher 3</h3>
+            <a href="#">Install Game (50GB)</a>
+            <a href="#">Install Update (6GB)</a>
+        </div>
+
+        <!-- Game 15 -->
+        <div class="game-card">
+            <img src="https://via.placeholder.com/200" alt="FIFA 22">
+            <h3>FIFA 22</h3>
+            <a href="#">Install Game (35GB)</a>
+            <a href="#">Install Update (4GB)</a>
+        </div>
+
+        <!-- Game 16 -->
+        <div class="game-card">
+            <img src="https://via.placeholder.com/200" alt="Call of Duty: Warzone">
+            <h3>Call of Duty: Warzone</h3>
+            <a href="#">Install Game (100GB)</a>
+            <a href="#">Install Update (10GB)</a>
+        </div>
+
+        <!-- Game 17 -->
+        <div class="game-card">
+            <img src="https://via.placeholder.com/200" alt="Final Fantasy XV">
+            <h3>Final Fantasy XV</h3>
+            <a href="#">Install Game (60GB)</a>
+            <a href="#">Install Update (7GB)</a>
+        </div>
+
+        <!-- Game 18 -->
+        <div class="game-card">
+            <img src="https://via.placeholder.com/200" alt="Horizon Zero Dawn">
+            <h3>Horizon Zero Dawn</h3>
+            <a href="#">Install Game (45GB)</a>
+            <a href="#">Install Update (5GB)</a>
+        </div>
+
+        <!-- Game 19 -->
+        <div class="game-card">
+            <img src="https://via.placeholder.com/200" alt="Persona 5">
+            <h3>Persona 5</h3>
+            <a href="#">Install Game (25GB)</a>
+            <a href="#">Install Update (3GB)</a>
+        </div>
+
+        <!-- Game 20 -->
+        <div class="game-card">
+            <img src="https://via.placeholder.com/200" alt="Little Big Planet 3">
+            <h3>Little Big Planet 3</h3>
+            <a href="#">Install Game (25GB)</a>
+            <a href="#">Install Update (3GB)</a>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 CogWheel. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+
+
